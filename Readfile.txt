@@ -1,1 +1,37 @@
 git init is used to track every code line in this folder
+
+To remove .git so meaning you git init in the wrong directory, you can remove this with this command line
+rm -rf .git
+
+initiating git in the wrong folder means git will track everything in that folder and all your moves from initializing.
+
+This is a problem as we are going to commit codes to github and it will be public. 
+
+use .gitignore to define parameters you do not want git to be able to pull up, or add/commit
+
+GITHUB Token ID:  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
+
+To remove or disconnect from a remote repository, you need to do the following: git config -l
+
+This will show you what remote origin you are in
+
+To remove or disconnect from this remote origin enter this command line, git remote remove origin
+
+To ignore files {Example I do not want git to recognize certain files when I pull status or add}
+Use this command line.
+Vi .gitignore
+
+In vi .gitignore specify what to ignore {example *.py, *.txt, *.html. -- this means any files ending in .py, .txt etc will be ignored}
+
+When you create a repository in GitHub, all you need to do is 
+Be in a folder that is not in a git repo.
+Git clone <url> {This will create a repo with the name of the online repo name}
+Now you can 
+Git add
+Git commit -m "msg"
+Git push -u origin
+
+Inviting and Adding collaborators on a repository
+- In the repository file in GITHUB, go to setting
+- Select collaborators
+- Find the collaborators and invite them to repo
